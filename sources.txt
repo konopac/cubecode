@@ -1,0 +1,4 @@
+Fonts:
+
+babyblocks: https://www.dafont.com/babyblocks.font
+8-bit-operator: https://www.1001freefonts.com/8-bit-operator.font
