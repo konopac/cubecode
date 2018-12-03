@@ -39,53 +39,53 @@ class Interpreter:
 		### DEFINE NEEDED FUNCTIONS ##
 		
 		# roll the cube north
-		def rollNorth():
-			ue.log('rollNorth')
+		def roll_north():
+			ue.log('roll_north')
 			self.currentX += 1
-			self.uobject.AddToQueue('rollNorth')
+			self.uobject.AddToQueue('roll_north')
 		
 		# roll the cube south
-		def rollSouth():
-			ue.log('rollSouth')
+		def roll_south():
+			ue.log('roll_south')
 			self.currentX -= 1
-			self.uobject.AddToQueue('rollSouth')
+			self.uobject.AddToQueue('roll_south')
 		
 		# roll the cube west
-		def rollWest():
-			ue.log('rollWest')
+		def roll_west():
+			ue.log('roll_west')
 			self.currentY -= 1
-			self.uobject.AddToQueue('rollWest')
+			self.uobject.AddToQueue('roll_west')
 		
 		# roll the cube east
-		def rollEast():
-			ue.log('rollEast')
+		def roll_east():
+			ue.log('roll_east')
 			self.currentY += 1
-			self.uobject.AddToQueue('rollEast')
+			self.uobject.AddToQueue('roll_east')
 		
 		# check the floor in direction north
-		def checkNorth():
-			ue.log('checkNorth')
+		def check_north():
+			ue.log('check_north')
 			if ((self.currentX + 1) >= self.lengthX) or (not self.playboard[self.currentX + 1][self.currentY]):
 				return 0
 			return self.playboard[self.currentX + 1][self.currentY].name
 		
 		# check the floor in direction south
-		def checkSouth():
-			ue.log('checkSouth')
+		def check_south():
+			ue.log('check_south')
 			if ((self.currentX - 1) < 0) or (not self.playboard[self.currentX - 1][self.currentY]):
 				return 0
 			return self.playboard[self.currentX - 1][self.currentY].name
 		
 		# check the floor in direction west
-		def checkWest():
-			ue.log('checkWest')
+		def check_west():
+			ue.log('check_west')
 			if ((self.currentY - 1) < 0) or (not self.playboard[self.currentX][self.currentY - 1]):
 				return 0
 			return self.playboard[self.currentX][self.currentY - 1].name
 		
 		# check the floor in direction east
-		def checkEast():
-			ue.log('checkEast')
+		def check_east():
+			ue.log('check_east')
 			if ((self.currentY + 1) >= self.lengthY) or (not self.playboard[self.currentX][self.currentY + 1]):
 				return 0
 			return self.playboard[self.currentX][self.currentY + 1].name
