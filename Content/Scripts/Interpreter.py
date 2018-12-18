@@ -39,28 +39,32 @@ class Interpreter:
 		### DEFINE NEEDED FUNCTIONS ##
 		
 		# roll the cube north
-		def roll_north():
-			ue.log('roll_north')
-			self.currentX += 1
-			self.uobject.AddToQueue('roll_north')
+		def roll_north(steps = 1):
+			ue.log('roll_north (' + str(steps) + ' steps)')
+			for step in range(steps):
+				self.currentX += 1
+				self.uobject.AddToQueue('roll_north')
 		
 		# roll the cube south
-		def roll_south():
-			ue.log('roll_south')
-			self.currentX -= 1
-			self.uobject.AddToQueue('roll_south')
+		def roll_south(steps = 1):
+			ue.log('roll_south (' + str(steps) + ' steps)')
+			for step in range(steps):
+				self.currentX -= 1
+				self.uobject.AddToQueue('roll_south')
 		
 		# roll the cube west
-		def roll_west():
-			ue.log('roll_west')
-			self.currentY -= 1
-			self.uobject.AddToQueue('roll_west')
+		def roll_west(steps = 1):
+			ue.log('roll_west (' + str(steps) + ' steps)')
+			for step in range(steps):
+				self.currentY -= 1
+				self.uobject.AddToQueue('roll_west')
 		
 		# roll the cube east
-		def roll_east():
-			ue.log('roll_east')
-			self.currentY += 1
-			self.uobject.AddToQueue('roll_east')
+		def roll_east(steps = 1):
+			ue.log('roll_east (' + str(steps) + ' steps)')
+			for step in range(steps):
+				self.currentY += 1
+				self.uobject.AddToQueue('roll_east')
 		
 		# check the floor in direction north
 		def check_north():
