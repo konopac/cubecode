@@ -121,6 +121,7 @@ $RECYCLE.BIN/
 Config/*
 Plugins/*
 copy.uproject
+CubeWorld.uproject
 
 
 # End of https://www.gitignore.io/api/linux,windows,unrealengine
