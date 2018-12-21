@@ -117,5 +117,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# cubeworld specifics
+Config/*
+Plugins/*
+copy.uproject
+
 
 # End of https://www.gitignore.io/api/linux,windows,unrealengine
