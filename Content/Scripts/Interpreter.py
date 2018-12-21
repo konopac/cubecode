@@ -111,7 +111,6 @@ class Interpreter:
 			entry = { 'x': int(location.x / 100), 'y': int(location.y / 100) }
 			# create cube object and add it to the list
 			cubes.append(Cube(name, entry))
-		ue.log(cubes)
 		
 		# measure the bounds of the 2D playboard
 		minX = cubes[0].location['x']
@@ -127,36 +126,33 @@ class Interpreter:
 				minY = cube.location['y']
 			if cube.location['y'] > maxY:
 				maxY = cube.location['y']
-		ue.log('minX = ' + str(minX))
-		ue.log('maxX = ' + str(maxX))
-		ue.log('minY = ' + str(minY))
-		ue.log('maxY = ' + str(maxY))
 		
 		# create the 2D playboard
 		self.lengthX = (maxX - minX) + 1
 		self.lengthY = (maxY - minY) + 1
 		self.playboard = [[0 for y in range(self.lengthY)] for x in range(self.lengthX)]
-		ue.log('lengthX = ' + str(self.lengthX))
-		ue.log('lengthY = ' + str(self.lengthY))
-		ue.log(self.playboard)
 		
 		# fill the 2D playboard
 		for cube in cubes:
 			# shift the cube coordinates to positive values only
 			cube.location['x'] = cube.location['x'] - minX
 			cube.location['y'] = cube.location['y'] - minY
-			ue.log(str(cube.location['x']) + ':' + str(cube.location['y']))
 			# set value
 			self.playboard[cube.location['x']][cube.location['y']] = cube
 			# set start coordinates
 			if cube.name == 'StartCube':
 				self.currentX = cube.location['x']
 				self.currentY = cube.location['y']
-		ue.log(self.playboard)
 		
 		
 		###### EXECUTE GIVEN CODE #####
-		exec code in globals(), locals()
+		try:
+			exec code in globals(), locals()
+		except Exception as ex:
+			template = "Ein Fehler ist aufgetreten: {0}\nDetails: {1!r}"
+			message = template.format(type(ex).__name__, ex.args)
+			ue.log(message)
+			self.uobject.ShowError(message)
 		###############################
 		
 		
