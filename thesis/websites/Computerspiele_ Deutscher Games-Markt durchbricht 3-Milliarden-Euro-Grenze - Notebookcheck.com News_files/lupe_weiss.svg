@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="17"
+   height="17"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="lupe.svg">
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1259"
+     inkscape:window-height="691"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="27.764706"
+     inkscape:cx="2.5153395"
+     inkscape:cy="8.3078888"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g7" />
+  <title
+     id="title4">Magnifier</title>
+  <metadata
+     id="metadata7">image/svg+xmlMagnifying Glass
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title>Magnifier</dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     id="g7"
+     transform="matrix(0.03271122,0,0,0.02586249,1.4719904,1.2754713)"
+     style="stroke:#000000;stroke-opacity:1">
+    <title
+       id="title9">Layer 1</title>
+    <path
+       d="M 84.298252,23.332936 C 4.4763867,69.418314 -22.889327,171.58358 23.189782,251.39459 c 40.919295,70.87398 126.076438,100.36999 200.521788,73.82599 5.84449,11.32056 123.41267,238.38939 123.60484,238.72223 5.75986,9.97632 26.91182,8.55995 47.26285,-3.18977 20.35075,-11.74957 32.15355,-29.35972 26.39369,-39.33604 L 276.03472,295.01166 C 336.24498,243.81187 353.2792,155.31539 312.3599,84.441406 266.28079,4.6303982 164.12012,-22.752442 84.298252,23.332936 z m 12.60024,21.82416 C 164.66224,6.0335081 251.412,29.277629 290.53574,97.041646 329.65947,164.80564 306.41494,251.55531 238.65119,290.6789 170.88718,329.80264 84.137671,306.55834 45.013942,238.79435 5.8901967,171.03033 29.134475,84.280841 96.898492,45.157096 z"
+       id="path2841"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:3.15004968999999990;stroke-opacity:1;fill-opacity:1"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
