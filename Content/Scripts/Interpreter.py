@@ -147,7 +147,7 @@ class Interpreter:
 		
 		###### EXECUTE GIVEN CODE #####
 		try:
-			exec code in globals(), locals()
+			exec(code, globals(), locals())
 		except Exception as ex:
 			template = "Ein Fehler ist aufgetreten: {0}\nDetails: {1!r}"
 			message = template.format(type(ex).__name__, ex.args)
